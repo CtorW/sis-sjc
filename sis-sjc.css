@@ -15,7 +15,7 @@
 ███    ███ ▀███████████   ███    ███ ███    █▄  ███    ███ ███         ███    ███
 ███   ▄███   ███    ███   ███    ███ ███    ███ ███    ███ ███▌    ▄   ███    ███
 ████████▀    ███    ███   ███    █▀  ████████▀  ████████▀  █████▄▄██   ███    █▀ 
-             ███    ███                                    ▀                     
+            ███    ███                                    ▀                     
 */
 
 @-moz-document domain("sis-sjc.phinma.edu.ph") {
@@ -147,6 +147,12 @@
     border: 2px solid var(--dracula-selection);
     border-radius: 20px 20px 20px 20px;
     background-color: var(--dracula-background) !important;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.submit__input:hover {
+    border-color: #FF79C6 !important;
+    box-shadow: 0 0 12px rgba(255, 121, 198, 0.3) !important;
 }
 
 .bi-arrow-clockwise {
@@ -155,7 +161,6 @@
 
 .bi-arrow-clockwise:hover {
     color: var(--dracula-orange) !important;
-
 }
 
 #txt_username {
@@ -172,6 +177,16 @@
     background-color: var(--dracula-background) !important;
     padding: 15px !important;
     transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#txt_username:hover {
+    border-color: #FF79C6 !important;
+    box-shadow: 0 0 12px rgba(255, 121, 198, 0.3) !important;
+}
+
+#txt_password:hover {
+    border-color: #FF79C6 !important;
+    box-shadow: 0 0 12px rgba(255, 121, 198, 0.3) !important;
 }
 
 .form-control {
@@ -261,5 +276,18 @@ img.w-25.in-down.a1 {
 .d-flex {
     justify-content: center;
 }
+
+.input-prefix {
+    top: 65%;
+    color: var(--dracula-cyan) !important;
 }
 
+.password-prefix {
+    top: 65%;
+    color: var(--dracula-cyan) !important;
+}
+
+input {
+    font-family: monospace !important;
+}
+}
