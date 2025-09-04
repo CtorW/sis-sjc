@@ -1,0 +1,265 @@
+/* ==UserStyle==
+@name           SIS_SJC Dracula Theme
+@namespace      github.com/CtorW/
+@version        1.0.0
+@description    Dracula theme for SIS_SJC
+@author         CtorW
+==/UserStyle== */
+
+/*
+████████▄     ▄████████    ▄████████  ▄████████ ███    █▄   ▄█          ▄████████
+███   ▀███   ███    ███   ███    ███ ███    ███ ███    ███ ███         ███    ███
+███    ███   ███    ███   ███    ███ ███    █▀  ███    ███ ███         ███    ███
+███    ███  ▄███▄▄▄▄██▀   ███    ███ ███        ███    ███ ███         ███    ███
+███    ███ ▀▀███▀▀▀▀▀   ▀███████████ ███        ███    ███ ███       ▀███████████
+███    ███ ▀███████████   ███    ███ ███    █▄  ███    ███ ███         ███    ███
+███   ▄███   ███    ███   ███    ███ ███    ███ ███    ███ ███▌    ▄   ███    ███
+████████▀    ███    ███   ███    █▀  ████████▀  ████████▀  █████▄▄██   ███    █▀ 
+             ███    ███                                    ▀                     
+*/
+
+@-moz-document domain("sis-sjc.phinma.edu.ph") {
+
+:root {
+    --dracula-background: #282A36;
+    --dracula-current-line: #44475A;
+    --dracula-selection: #44475A;
+    --dracula-foreground: #F8F8F2;
+    --dracula-comment: #6272A4;
+    --dracula-red: #FF5555;
+    --dracula-orange: #FFB86C;
+    --dracula-yellow: #F1FA8C;
+    --dracula-green: #50FA7B;
+    --dracula-cyan: #8BE9FD;
+    --dracula-purple: #BD93F9;
+    --dracula-pink: #FF79C6;
+    --bs-blue: var(--dracula-cyan);
+    --bs-indigo: var(--dracula-purple);
+    --bs-purple: var(--dracula-purple);
+    --bs-pink: var(--dracula-pink);
+    --bs-red: var(--dracula-red);
+    --bs-orange: var(--dracula-orange);
+    --bs-yellow: var(--dracula-yellow);
+    --bs-green: var(--dracula-green);
+    --bs-teal: var(--dracula-cyan);
+    --bs-cyan: var(--dracula-cyan);
+    --bs-black: #ffff;
+    --bs-white: #fff;
+    --bs-gray: var(--dracula-comment);
+    --bs-gray-dark: var(--dracula-background);
+    --bs-gray-100: var(--dracula-foreground);
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: var(--dracula-comment);
+    --bs-gray-700: var(--dracula-selection);
+    --bs-gray-800: var(--dracula-current-line);
+    --bs-gray-900: var(--dracula-background);
+    --bs-primary: var(--dracula-purple);
+    --bs-secondary: var(--dracula-comment);
+    --bs-success: var(--dracula-green);
+    --bs-info: var(--dracula-cyan);
+    --bs-warning: var(--dracula-yellow);
+    --bs-danger: var(--dracula-red);
+    --bs-light: var(--dracula-selection);
+    --bs-dark: var(--dracula-background);
+    --bs-primary-rgb: 189, 147, 249;
+    --bs-secondary-rgb: 98, 114, 164;
+    --bs-success-rgb: 80, 250, 123;
+    --bs-info-rgb: 139, 233, 253;
+    --bs-warning-rgb: 241, 250, 140;
+    --bs-danger-rgb: 255, 85, 85;
+    --bs-light-rgb: 68, 71, 90;
+    --bs-dark-rgb: 40, 42, 54;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 248, 248, 242;
+    --bs-body-bg-rgb: 40, 42, 54;
+    --bs-body-font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: var(--dracula-foreground);
+    --bs-body-bg: var(--dracula-background);
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-color: var(--dracula-current-line);
+    --bs-border-color-translucent: rgba(248, 248, 242, 0.175);
+    --bs-border-radius: 0.375rem;
+    --bs-border-radius-sm: 0.25rem;
+    --bs-border-radius-lg: 0.5rem;
+    --bs-border-radius-xl: 1rem;
+    --bs-border-radius-2xl: 2rem;
+    --bs-border-radius-pill: 50rem;
+    --bs-link-color: var(--dracula-cyan);
+    --bs-link-hover-color: var(--dracula-pink);
+    --bs-code-color: var(--dracula-pink);
+    --bs-highlight-bg: var(--dracula-selection);
+}
+
+
+.card:hover {
+    border-color: #FF79C6 !important;
+    box-shadow: 0 0 12px rgba(255, 121, 198, 0.3) !important;
+}
+
+.card {
+    border: 2px solid var(--dracula-selection);
+    border-radius: 20px 20px 20px 20px;
+    background-color: var(--dracula-background) !important;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#btnSubmit {
+    border: 1px solid var(--dracula-selection);
+    border-radius: 20px 0px 20px 0px;
+    background-color: #6272A4 !important;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#btnSubmit:hover {
+    border-color: #FF79C6 !important;
+    box-shadow: 0 0 12px rgba(255, 121, 198, 0.3) !important;
+}
+
+.submit__generated>span:nth-child(1) {
+    border: 2px solid var(--dracula-selection);
+    border-radius: 20px 0px 20px 0px;
+}
+
+.submit__generated>span:nth-child(2) {
+    border: 2px solid var(--dracula-selection);
+    border-radius: 0px 20px 0px 20px;
+}
+
+.submit__input {
+    border: 2px solid var(--dracula-selection);
+    border-radius: 20px 20px 20px 20px;
+    background-color: var(--dracula-background) !important;
+}
+
+.bi-arrow-clockwise {
+    color: var(--dracula-cyan) !important;
+}
+
+.bi-arrow-clockwise:hover {
+    color: var(--dracula-orange) !important;
+
+}
+
+#txt_username {
+    border: 2px solid var(--dracula-selection);
+    border-radius: 20px 20px 20px 20px;
+    background-color: var(--dracula-background) !important;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 15px !important;
+}
+
+#txt_password {
+    border: 2px solid var(--dracula-selection);
+    border-radius: 20px 20px 20px 20px;
+    background-color: var(--dracula-background) !important;
+    padding: 15px !important;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-control {
+    color: #F8F8F2 !important;
+    background-color: var(--dracula-background) !important;
+}
+
+body {
+    background: none;
+    background-color: #44475A !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+#imgNPCLogo {
+    display: none;
+}
+
+.mt-xxl-5 {
+    display: none;
+}
+
+.pt-lg-5 {
+    display: none;
+}
+
+.col-lg-5 {
+    display: none;
+}
+
+.mt-3>.row {
+    justify-content: center;
+}
+
+@media (min-width: 992px) {
+    .pt-lg-3 {
+        padding-top: 5rem !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .mt-lg-5 {
+        margin-top: 0px !important;
+    }
+}
+
+.mb-4 {
+    margin-bottom: 0px !important;
+}
+
+@media (min-width: 992px) {
+    .offset-lg-1 {
+        margin-left: 0px;
+    }
+}
+
+.mb-0:nth-child(1) {
+    color: #BD93F9 !important;
+    font-family: monospace !important;
+    text-align: center !important;
+}
+
+.mb-0:nth-child(2) {
+    color: #BD93F9 !important;
+    font-family: monospace !important;
+    text-align: center !important;
+}
+
+img.w-25.in-down.a1 {
+    position: relative !important;
+}
+
+img.w-25.in-down.a1 {
+    content: "" !important;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+img.w-25.in-down.a1 {
+    visibility: hidden !important;
+}
+
+.d-flex {
+    justify-content: center;
+}
+}
+
